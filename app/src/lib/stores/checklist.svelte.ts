@@ -1,6 +1,6 @@
-import type { Checklist, Layer, Policy } from '$lib/types';
-import { agileDataChecklist, patterns as allPatterns, lookups, dictionary, defaultPolicies, defaultCategories } from '$lib/data';
-import { buildXlsxBlob, downloadXlsx, type SheetSpec } from '$lib/cp-shared-xlsx';
+import type { Checklist, Layer, Policy } from '#lib/types.ts';
+import { agileDataChecklist, patterns as allPatterns, lookups, dictionary, defaultPolicies, defaultCategories } from '#lib/data/index.ts';
+import { buildXlsxBlob, downloadXlsx, type SheetSpec } from '#lib/cp-shared-xlsx/index.ts';
 
 export interface ChecklistStoreOptions {
 	onPersist?: (saved: Record<string, Checklist>, currentId: string) => void;

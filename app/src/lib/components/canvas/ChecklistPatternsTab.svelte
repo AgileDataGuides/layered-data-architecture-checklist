@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { getContext } from 'svelte';
-	import type { DataAdapter, ContextNode, ContextLink } from '$lib/cp-shared';
-	import { getNodeLabels } from '$lib/cp-shared';
+	import type { DataAdapter, ContextNode, ContextLink } from '#lib/cp-shared.ts';
+	import { getNodeLabels } from '#lib/cp-shared.ts';
 	import patternsJson from '$data/lookups/patterns.json';
 	import lookupsJson from '$data/lookups/lookups.json';
 	import dictionaryJson from '$data/lookups/dictionary.json';

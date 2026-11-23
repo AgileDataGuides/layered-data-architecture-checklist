@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { patterns, lookups, dictionary } from '$lib/data';
-	import { effectiveData } from '$lib/data/effective.svelte';
-	import type { Pattern } from '$lib/types';
+	import { patterns, lookups, dictionary } from '#lib/data/index.ts';
+	import { effectiveData } from '#lib/data/effective.svelte.ts';
+	import type { Pattern } from '#lib/types.ts';
 
 	const LOOKUPS_KEY = 'layer-checklist-lookups-overrides';
 	const DICT_KEY = 'layer-checklist-dict-overrides';

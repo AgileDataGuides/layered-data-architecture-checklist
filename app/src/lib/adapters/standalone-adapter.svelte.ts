@@ -7,9 +7,9 @@
  *
  * Also provides sync helpers to load from / persist back to the ChecklistStore format.
  */
-import type { DataAdapter, ContextNode, ContextLink } from '$lib/cp-shared';
+import type { DataAdapter, ContextNode, ContextLink } from '#lib/cp-shared.ts';
 import { ChecklistJsonAdapter } from './json-adapter';
-import type { Checklist, Policy } from '$lib/types';
+import type { Checklist, Policy } from '#lib/types.ts';
 
 export class StandaloneChecklistAdapter implements DataAdapter {
 	private inner = new ChecklistJsonAdapter();

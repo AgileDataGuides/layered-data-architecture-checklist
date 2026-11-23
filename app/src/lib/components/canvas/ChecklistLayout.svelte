@@ -10,13 +10,13 @@
 	 * app's data directory via the $data vite alias.
 	 */
 	import { getContext } from 'svelte';
-	import type { DataAdapter, ContextNode, ContextLink } from '$lib/cp-shared';
-	import { getNodeLabels } from '$lib/cp-shared';
+	import type { DataAdapter, ContextNode, ContextLink } from '#lib/cp-shared.ts';
+	import { getNodeLabels } from '#lib/cp-shared.ts';
 	import ChecklistPatternsTab from './ChecklistPatternsTab.svelte';
 	import ChecklistPoliciesTab from './ChecklistPoliciesTab.svelte';
 	import StepsView from './StepsView.svelte';
 	import { stepsTabLabel, type ChecklistView, type StepActions } from '../../model/steps-view';
-	import { buildXlsxBlob, downloadXlsx, type SheetSpec } from '$lib/cp-shared-xlsx';
+	import { buildXlsxBlob, downloadXlsx, type SheetSpec } from '#lib/cp-shared-xlsx/index.ts';
 
 	// Static reference data from the checklist app's data directory
 	import patternsJson from '$data/lookups/patterns.json';

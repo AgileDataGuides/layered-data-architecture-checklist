@@ -3,7 +3,7 @@ import lookupsJson from '$data/lookups/lookups.json';
 import dictionaryJson from '$data/lookups/dictionary.json';
 import agileDataExample from '$data/architectures/agiledata-example.json';
 import policiesJson from '$data/policies/policies.json';
-import type { PatternsFile, Lookups, Dictionary, Checklist, PoliciesFile } from '$lib/types';
+import type { PatternsFile, Lookups, Dictionary, Checklist, PoliciesFile } from '#lib/types.ts';
 
 export const patternsFile = patternsJson as unknown as PatternsFile;
 export const patterns = patternsFile.patterns;

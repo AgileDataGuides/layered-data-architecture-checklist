@@ -2,7 +2,7 @@
  * Effective patterns / lookups / dictionary — defaults merged with the
  * user's localStorage overrides written by AdminPanel.
  *
- * Why this exists: ChecklistTable used to import directly from `$lib/data`,
+ * Why this exists: ChecklistTable used to import directly from `#lib/data/index.ts`,
  * which is a static module load. When AdminPanel removed pattern types or
  * edited lookup values, those changes landed in localStorage but the canvas
  * never refreshed because module-level imports don't re-run.
@@ -20,8 +20,8 @@ import {
 	patterns as defaultPatterns,
 	lookups as defaultLookups,
 	dictionary as defaultDict
-} from '$lib/data';
-import type { Pattern, Lookups, Dictionary } from '$lib/types';
+} from '#lib/data/index.ts';
+import type { Pattern, Lookups, Dictionary } from '#lib/types.ts';
 
 const PATTERNS_KEY = 'layer-checklist-patterns-overrides';
 const LOOKUPS_KEY = 'layer-checklist-lookups-overrides';

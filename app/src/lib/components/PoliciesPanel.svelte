@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { getContext } from 'svelte';
-	import type { Policy } from '$lib/types';
-	import type { ChecklistStore } from '$lib/stores/checklist.svelte';
+	import type { Policy } from '#lib/types.ts';
+	import type { ChecklistStore } from '#lib/stores/checklist.svelte.ts';
 
 	const store = getContext<ChecklistStore>('checklistStore');
 

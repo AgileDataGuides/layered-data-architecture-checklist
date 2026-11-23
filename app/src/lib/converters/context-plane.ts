@@ -1,8 +1,8 @@
 /**
  * Bidirectional converter between Checklist native JSON and Context Plane { nodes, links } format.
  */
-import type { ContextNode, ContextLink } from '$lib/cp-shared';
-import type { Checklist, Layer, Policy } from '$lib/types';
+import type { ContextNode, ContextLink } from '#lib/cp-shared.ts';
+import type { Checklist, Layer, Policy } from '#lib/types.ts';
 
 function createId(prefix: string): string {
 	const rand = typeof crypto !== 'undefined' && crypto.randomUUID

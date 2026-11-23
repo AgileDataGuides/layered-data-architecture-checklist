@@ -1,18 +1,18 @@
 <script lang="ts">
 	import { setContext } from 'svelte';
-	import { createChecklistStore } from '$lib/stores/checklist.svelte';
-	import { StandaloneChecklistAdapter } from '$lib/adapters/standalone-adapter.svelte';
-	import { contextPlaneToChecklist } from '$lib/converters/context-plane';
-	import type { Checklist } from '$lib/types';
-	import Toolbar from '$lib/components/Toolbar.svelte';
-	import ChecklistTable from '$lib/components/ChecklistTable.svelte';
+	import { createChecklistStore } from '#lib/stores/checklist.svelte.ts';
+	import { StandaloneChecklistAdapter } from '#lib/adapters/standalone-adapter.svelte.ts';
+	import { contextPlaneToChecklist } from '#lib/converters/context-plane.ts';
+	import type { Checklist } from '#lib/types.ts';
+	import Toolbar from '#lib/components/Toolbar.svelte';
+	import ChecklistTable from '#lib/components/ChecklistTable.svelte';
 
-	import AdminPanel from '$lib/components/AdminPanel.svelte';
-	import PoliciesPanel from '$lib/components/PoliciesPanel.svelte';
-	import Instructions from '$lib/components/Instructions.svelte';
-	import StepsView from '$lib/components/canvas/StepsView.svelte';
-	import { effectiveData } from '$lib/data/effective.svelte';
-	import { sortByOrder, stepsTabLabel, type ChecklistView, type StepActions } from '$lib/model/steps-view';
+	import AdminPanel from '#lib/components/AdminPanel.svelte';
+	import PoliciesPanel from '#lib/components/PoliciesPanel.svelte';
+	import Instructions from '#lib/components/Instructions.svelte';
+	import StepsView from '#lib/components/canvas/StepsView.svelte';
+	import { effectiveData } from '#lib/data/effective.svelte.ts';
+	import { sortByOrder, stepsTabLabel, type ChecklistView, type StepActions } from '#lib/model/steps-view.ts';
 
 	// Create the store with default localStorage persistence
 	const store = createChecklistStore();

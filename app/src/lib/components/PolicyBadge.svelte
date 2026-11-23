@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Policy } from '$lib/types';
+	import type { Policy } from '#lib/types.ts';
 
 	let {
 		policyIds,

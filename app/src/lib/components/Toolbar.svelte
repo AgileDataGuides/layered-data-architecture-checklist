@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { getContext } from 'svelte';
-	import type { ChecklistStore } from '$lib/stores/checklist.svelte';
+	import type { ChecklistStore } from '#lib/stores/checklist.svelte.ts';
 
 	const store = getContext<ChecklistStore>('checklistStore');
 

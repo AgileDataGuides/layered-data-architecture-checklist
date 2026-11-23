@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { dictionary } from '$lib/data';
+	import { dictionary } from '#lib/data/index.ts';
 
 	let {
 		patternId,

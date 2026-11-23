@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { getContext } from 'svelte';
-	import type { ChecklistStore } from '$lib/stores/checklist.svelte';
-	import { effectiveData } from '$lib/data/effective.svelte';
+	import type { ChecklistStore } from '#lib/stores/checklist.svelte.ts';
+	import { effectiveData } from '#lib/data/effective.svelte.ts';
 
 	// Reactive — picks up AdminPanel's localStorage overrides via
 	// effectiveData.refresh(). Same-tab Manage Patterns edits flow through
